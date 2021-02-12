@@ -5,13 +5,29 @@ import Container from '@material-ui/core/Container';
 import EnableAudioButton from '../Buttons/EnableAudio/EnableAudio';
 
 export default function SimpleContainer() {
+
+
     return (
-      <React.Fragment>
-        <CssBaseline />
-        <Container maxWidth="sm">
-          <Typography component="div" style={{ backgroundColor: '#cfe8fc', height: '100vh' }} />
-          <EnableAudioButton/>
-        </Container>
-      </React.Fragment>
+        <React.Fragment>
+            <CssBaseline />
+            <Container maxWidth="sm">
+                <Typography component="div" style={{ backgroundColor: '#cfe8fc', height: '100vh' }} />
+                < EnableAudioButton style={  {
+                    position: 'absolute',
+                    top: 400
+                }} />
+            </Container>
+        </React.Fragment>
     );
-  }
+}
+
+const styles = {
+    enableAudioButtonContainer: {
+        height: '400px',
+        width: '100%',
+        overflow: 'auto',
+        padding: '1%',
+
+    }
+
+}
