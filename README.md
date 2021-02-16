@@ -1,18 +1,33 @@
-# todo-react
-Sample todo app built with the React/ReactDOM framework. For the accompanying documentation, see 
-[Understanding client-side JavaScript frameworks
-: React tutorials](https://wiki.developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks#React_tutorials).
+# EnableAudioButton
 
-For the live version, see https://mdn.github.io/todo-react-build/.
-
+The enableAudioButton will allow users to turnon an alert that will ping when a new message becomes available. This is an accessibility feature. 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Logic
+
+The component has a state and props value. The component is updated by being passed a boolean value as a prop “newUnreadMessage” conditionality this will be handled with the state of the component. When both enableValue and newUnreadMessage are true the sound will play. 
+
+#### State
+[ 
+    this.state = {
+        enableAudio: false,
+        enableValue: "Audio Off", 
+    };
+]
+
+When button is clicked the value of enableValue will be set to true and enableAudio will toggle the label of button as “Audio On”  PropsNewUnreadMessage
+
+The sound is handle by a @goodboydigital/SoundBoy provides a simple interface through which to play sounds on different channels (e.g. sfx, vo, music), with a flexible approach to callbacks and sound playback/control.Link to the package https://www.npmjs.com/package/@goodboydigital/soundboy
+
+
+### First Time Running
+ 
+1.) npm i @goodboydigital/soundboy or yarn add @goodboydigital/soundboy
+2.) Import the enableAudioButton Pass boolean to props
 
 In the project directory, you can run:
-
-### `yarn start`
+    npm start or yarn start 
 
 Runs the app in the development mode.<br />
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
