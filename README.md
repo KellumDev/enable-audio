@@ -18,12 +18,11 @@ The component has a state and props value. The component is updated by being pas
 
 When button is clicked the value of enableValue will be set to true and enableAudio will toggle the label of button as “Audio On”  PropsNewUnreadMessage
 
-The sound is handle by a @goodboydigital/SoundBoy provides a simple interface through which to play sounds on different channels (e.g. sfx, vo, music), with a flexible approach to callbacks and sound playback/control.Link to the package https://www.npmjs.com/package/@goodboydigital/soundboy
-
+The sound is handle by a uifx provides a simple interface that uses the HTMLAudioElement API so it's available for all major desktop/mobile browsers. It also preloads audio files so sounds are immediately ready for playback.
 
 ### First Time Running
  
-1.) npm i @goodboydigital/soundboy or yarn add @goodboydigital/soundboy
+1.) npm i uifx or yarn add uifx
 2.) Import the enableAudioButton Pass boolean to props
 
 In the project directory, you can run:

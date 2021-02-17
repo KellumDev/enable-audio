@@ -1,7 +1,7 @@
 div.rcw-widget-container {
     bottom: 226px; 
     right: 720px; 
-    position: fixed;
+    position: absolute;
   }
   
 /*   .rcw-message > .rcw-response {
