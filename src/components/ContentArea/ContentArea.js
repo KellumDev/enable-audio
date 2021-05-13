@@ -5,7 +5,7 @@ import Container from '@material-ui/core/Container';
 import EnableAudioButton from '../Buttons/EnableAudio/EnableAudio';
 import './ContentArea.css'
 import { Widget, addResponseMessage, addUserMessage } from 'react-chat-widget';
-
+import MessageBlock from '../MessageBlock/MessageBlock'
 
 export default function ContainerArea() {
     const [newUnreadMessage, setnewUnreadMessage] = useState(0);
@@ -35,6 +35,7 @@ export default function ContainerArea() {
         <React.Fragment>
             <CssBaseline />
             <Container maxWidth="sm">
+            <MessageBlock/> 
                 <Widget className="chat-widget" 
                 style={styles.chatWidget} 
                     handleNewUserMessage={handleNewUserMessage}
