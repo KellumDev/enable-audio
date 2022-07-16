@@ -31,12 +31,7 @@ class MessageBlock extends Component {
         };
         
     }
-  
-    // ToggleAlert = () => {
- 
-
-    // }
- // aria-label = {thumbnailOnly ? element.altText : ""} 
+   
     render() {
 
         let thumbnailOnly = true
@@ -44,6 +39,7 @@ class MessageBlock extends Component {
             <div className="message-block" aria-label = {thumbnailOnly ? 'message-block' : null } style={styles.messageBlockContainer}  >
                 <h1>Message Block</h1>
             </div>
+            
         )
     }
 }
